@@ -56,10 +56,10 @@ from spikingjelly.activation_based import neuron
 
 T = 4
 N = 2
-masked_psn = neuron.MaskedPSN(order=2, T=T)
+masked_psn = neuron.MaskedPSN(k=2, T=T)
 epochs = 4
 for epoch in range(epochs):
-    masked_psn.k = (epoch + 1) / epochs
+    masked_psn.lambda_ = (epoch + 1) / epochs
     print(f'epoch={epoch}, weight = ')
     with torch.no_grad():
         print(masked_psn.masked_weight())
@@ -93,7 +93,7 @@ from spikingjelly.activation_based import neuron, functional
 
 T = 64
 N = 64
-masked_psn = neuron.MaskedPSN(k_init=1., order=32, T=T, step_mode='m')
+masked_psn = neuron.MaskedPSN(lambda_init=1., k=32, T=T, step_mode='m')
 x_seq = torch.rand([T, N]) + 2.
 y_seq_m = masked_psn(x_seq)
 masked_psn.step_mode = 's'
@@ -114,7 +114,7 @@ from spikingjelly.activation_based import neuron
 
 T = 64
 N = 64
-spsn = neuron.SlidingPSN(order=2, step_mode='m', backend='gemm')
+spsn = neuron.SlidingPSN(k=2, step_mode='m', backend='gemm')
 x_seq = torch.rand([T, N])
 y_seq_gemm = spsn(x_seq)
 spsn.backend = 'conv'
@@ -133,7 +133,7 @@ from spikingjelly.activation_based import neuron, functional
 
 T = 64
 N = 64
-spsn = neuron.SlidingPSN(order=2, step_mode='m')
+spsn = neuron.SlidingPSN(k=2, step_mode='m')
 x_seq = torch.rand([T, N])
 y_seq_m = spsn(x_seq)
 spsn.step_mode = 's'
@@ -145,4 +145,3 @@ firing rate =  tensor(0.2327, grad_fn=<MeanBackward0>)
 The error of two step modes is tensor(0., grad_fn=<SumBackward0>)
 '''
 ```
-
