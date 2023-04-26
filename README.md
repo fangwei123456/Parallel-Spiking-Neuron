@@ -1,6 +1,6 @@
 ## Parallel Spiking Neuron
 
-This repo contains source codes for the arxiv paper **Parallel Spiking Neurons with High Efficiency and Long-term Dependencies Learning Ability**.
+This repo contains source codes for the arxiv paper [Parallel Spiking Neurons with High Efficiency and Long-term Dependencies Learning Ability](https://arxiv.org/abs/2304.12760).
 
 
 
