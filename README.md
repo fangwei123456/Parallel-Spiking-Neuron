@@ -4,7 +4,7 @@ This repo contains source codes for the arxiv paper [Parallel Spiking Neurons wi
 
 **Errors in the arxiv v1 paper**
 
-1.Superscript of sum in Eq.(8) should be `T - 1`  rather than `t`. Thus, Eq.(8) should be corrected as
+1. Superscript of sum in Eq.(8) should be `T - 1`  rather than `t`. Thus, Eq.(8) should be corrected as
 
 $$
 H[t] = \sum_{i=0}^{T-1}W_{t, i} \cdot X[i]
