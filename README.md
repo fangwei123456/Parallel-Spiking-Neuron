@@ -2,6 +2,15 @@
 
 This repo contains source codes for the arxiv paper [Parallel Spiking Neurons with High Efficiency and Long-term Dependencies Learning Ability](https://arxiv.org/abs/2304.12760).
 
+**Errors in the arxiv v1 paper**
+
+1.Superscript of sum in Eq.(8) should be `T - 1`  rather than `t`. Thus, Eq.(8) should be corrected as
+$$
+H[t] = \sum_{i=0}^{T-1}W_{t, i} \cdot X[i]
+$$
+
+2. In Fig.5(b), the firing rates of SPSN are missed when drawing, and `firing rates - neuron label`  are disturbed from `SPSN` to `PLIF`. The correct neuron labels should be `PSN, masked PSN, GLIF, KLIF, PLIF, LIF`.
+
 
 
 The original training codes, logs, and models will be released soon. However, the source codes of the PSN family have been pushed in SpikingJelly and can be used easily. It is highly recommended to try the PSN family in your SNNs.
