@@ -11,6 +11,7 @@ H[t] = \sum_{i=0}^{T-1}W_{t, i} \cdot X[i]
 $$
 
 2. In Fig.5(b), the firing rates of SPSN are missed when drawing, and `firing rates - neuron label`  are disturbed from `SPSN` to `PLIF`. The correct neuron labels should be `PSN, masked PSN, GLIF, KLIF, PLIF, LIF`.
+3. In Fig.2, `PSN, T=4, K=2`  should be corrected as `PSN, T=4`.
 
 
 
