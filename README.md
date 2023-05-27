@@ -1,6 +1,7 @@
 ## Parallel Spiking Neuron
 
-This repo contains source codes for the arxiv paper [Parallel Spiking Neurons with High Efficiency and Long-term Dependencies Learning Ability](https://arxiv.org/abs/2304.12760).
+This repo contains source codes for the arxiv paper [Parallel Spiking Neurons with High Efficiency and Ability to Learn Long-term Dependencies
+](https://arxiv.org/abs/2304.12760).
 
 The original training codes, logs, and models will be released soon. However, the source codes of the PSN family have been pushed in SpikingJelly and can be used easily. It is highly recommended to try the PSN family in your SNNs.
 
