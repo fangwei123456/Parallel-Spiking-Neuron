@@ -1,13 +1,49 @@
 ## Parallel Spiking Neuron
 
-This repo contains source codes for the arxiv paper [Parallel Spiking Neurons with High Efficiency and Ability to Learn Long-term Dependencies
+This repo contains source codes for the NeurIPS 2023 paper [Parallel Spiking Neurons with High Efficiency and Ability to Learn Long-term Dependencies
+
 ](https://arxiv.org/abs/2304.12760).
 
-The original training codes, logs, and models will be released soon. However, the source codes of the PSN family have been pushed in SpikingJelly and can be used easily. It is highly recommended to try the PSN family in your SNNs.
+The source codes of the PSN family have been pushed in SpikingJelly (the master version in GitHub) and can be used easily. It is highly recommended to try the PSN family in your SNNs.
 
 
 
-## Usage
+The source codes for different datasets are stored in the corresponding directories, and the tensorboard logs are stored in the subdirectories. For example, the source codes for the CIFAR10 dataset are located in `./cifar10`, and the tensorboard logs are located in `./cifar10/logs`. Args are also stored in `args.txt` with the tensorboard logs.
+
+SpikingJelly is required to run these codes. The version of SpikingJelly should be `>=0.0.0.0.14 ` unless otherwise specified.
+
+Install the SpikingJelly with the version `0.0.0.0.14`:
+
+```
+pip install spikingjelly==0.0.0.0.14
+```
+
+To check the training logs, the tensorboard is required.
+
+Install the tensorboard if needed:
+
+```
+pip install tensorboard
+```
+
+Launch the tensorboard:
+
+```
+tensorboard.exe --logdir=./
+```
+
+Open http://localhost:6006/  and check the logs:
+
+![tensorboard_example](./tensorboard_example.png)
+
+
+
+For usage of codes, refer to the `readme` in each directory.
+
+Note that the released codes are simplified codes with removing some primitive modules.
+
+
+## Usage in SpikingJelly
 
 Refer to the following links for API docs:
 
