@@ -1,0 +1,2 @@
+Namespace(amp=True, b=128, channels=128, class_num=100, data_dir='/userhome/datasets/CIFAR100', device='cuda:0', epochs=256, j=4, lr=0.1, momentum=0.9, neu='klif', opt='sgd', out_dir='./logs_scf100', parallel=False, resume=None)
+train_secf10.py -data-dir /userhome/datasets/CIFAR100 -class-num 100 -amp -opt sgd -channels 128 -epochs 256 -device cuda:0 -out-dir ./logs_scf100 -neu klif

@@ -1,0 +1,2 @@
+Namespace(device='cuda:0', b=128, epochs=256, j=4, data_dir='/datasets/CIFAR10', out_dir='./logs', resume=None, amp=True, opt='sgd', momentum=0.9, lr=0.1, channels=128, neu='if5', parallel=False)
+train_secf10.py -data-dir /datasets/CIFAR10 -amp -opt sgd -channels 128 -epochs 256 -neu if5 -device cuda:0
