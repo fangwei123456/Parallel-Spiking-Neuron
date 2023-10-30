@@ -1,7 +1,7 @@
 ## Parallel Spiking Neuron
 
 This repo contains source codes for the NeurIPS 2023 paper [Parallel Spiking Neurons with High Efficiency and Ability to Learn Long-term Dependencies
-](https://arxiv.org/abs/2304.12760).
+](https://arxiv.org/abs/2304.12760). Model weights on the CIFAR10, CIFAR10-DVS and ImageNet datasets are available at https://figshare.com/articles/dataset/Checkpoints_for_Parallel-Spiking-Neuron/24454912 .
 
 The source codes of the PSN family have been pushed in SpikingJelly (the master version in GitHub) and can be used easily. It is highly recommended to try the PSN family in your SNNs.
 
